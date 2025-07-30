@@ -27,12 +27,22 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     await client.connect();
-    const db = client.db("DB_NAME");
-    const collection = db.collection("COLLECTION_NAME");
+     const campaignCollection =client.db("CrowdCubeDB").collection("campaignCollection");
 
     // All CRUD operations here...
     
-    
+    //add new campaign
+    app.post('/campaigns',async(req,res)=>{
+        const campaign =req.body;
+        const result = await campaignCollection.insertOne(campaign)
+        res.send(result)
+    })
+    // Get all campaign 
+    app.get('/campaigns', async(req,res)=>{
+        const result = await campaignCollection.find().toArray();
+        res.send(result)
+    });
+
 
 		// Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
