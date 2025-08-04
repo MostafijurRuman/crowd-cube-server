@@ -27,7 +27,8 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     await client.connect();
-     const campaignCollection =client.db("CrowdCubeDB").collection("campaignCollection");
+    const campaignCollection = client.db("CrowdCubeDB").collection("campaignCollection");
+    const donationCollection = client.db("CrowdCubeDB").collection("donationCollection");
 
     // All CRUD operations here...
     
@@ -42,6 +43,28 @@ async function run() {
         const result = await campaignCollection.find().toArray();
         res.send(result)
     });
+    // Get one campaign by id
+    app.get('/campaigns/:id', async(req,res)=>{
+        const id = req.params.id;
+        const query = {_id: new ObjectId(id)}
+        const result = await campaignCollection.findOne(query)
+        res.send(result)
+    });
+
+
+    // Donation Data
+  // Add a donation to a specific campaign
+  app.post('/donations', async (req, res) => {
+    const donation = req.body;
+    const result = await donationCollection.insertOne(donation);
+    res.send(result);
+  });
+
+// Get all donations
+app.get('/donations', async (req, res) => {
+  const result = await donationCollection.find().toArray();
+  res.send(result);
+});
 
 
 		// Send a ping to confirm a successful connection
