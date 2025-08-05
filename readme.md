@@ -66,7 +66,7 @@ http://localhost:5000
 
 **Live Server:**
 ```
-https://crowd-cube-server-eight.vercel.app
+https://crowd-cube-server-gilt.vercel.app
 ```
 
 ### 🏆 Campaign Endpoints
@@ -91,16 +91,16 @@ POST /campaigns
 **Body**:
 ```json
 {
-  "image": "campaign_image_url",
-  "title": "Campaign Title",
-  "type": "Campaign Type",
-  "description": "Campaign Description",
-  "minDonation": 10,
-  "deadline": "2024-12-31",
-  "goalAmount": 5000,
-  "creatorEmail": "creator@example.com",
-  "creatorName": "Creator Name",
-  "creatorPhoto": "creator_photo_url"
+    "image": "campaign_image_url",
+    "title": "Campaign Title",
+    "type": "Campaign Type",
+    "description": "Campaign Description",
+    "minDonation": 10,
+    "deadline": "2024-12-31",
+    "goalAmount": 5000,
+    "creatorEmail": "creator@example.com",
+    "creatorName": "Creator Name",
+    "creatorPhoto": "creator_photo_url"
 }
 ```
 
@@ -134,12 +134,12 @@ POST /donations
 **Body**:
 ```json
 {
-  "campaignId": "campaign_object_id",
-  "donorName": "Donor Name",
-  "donorEmail": "donor@example.com",
-  "amount": 100,
-  "message": "Optional donation message",
-  "timestamp": "2024-01-01T00:00:00.000Z"
+    "campaignId": "campaign_object_id",
+    "donorName": "Donor Name",
+    "donorEmail": "donor@example.com",
+    "amount": 100,
+    "message": "Optional donation message",
+    "timestamp": "2024-01-01T00:00:00.000Z"
 }
 ```
 
@@ -148,30 +148,30 @@ POST /donations
 ### Campaign Collection
 ```javascript
 {
-  _id: ObjectId,
-  image: String,
-  title: String,
-  type: String,
-  description: String,
-  minDonation: Number,
-  deadline: String,
-  goalAmount: Number,
-  creatorEmail: String,
-  creatorName: String,
-  creatorPhoto: String
+    _id: ObjectId,
+    image: String,
+    title: String,
+    type: String,
+    description: String,
+    minDonation: Number,
+    deadline: String,
+    goalAmount: Number,
+    creatorEmail: String,
+    creatorName: String,
+    creatorPhoto: String
 }
 ```
 
 ### Donation Collection
 ```javascript
 {
-  _id: ObjectId,
-  campaignId: String,
-  donorName: String,
-  donorEmail: String,
-  amount: Number,
-  message: String,
-  timestamp: Date
+    _id: ObjectId,
+    campaignId: String,
+    donorName: String,
+    donorEmail: String,
+    amount: Number,
+    message: String,
+    timestamp: Date
 }
 ```
 
@@ -188,7 +188,7 @@ crowd-cube-server/
 
 ## 🚀 Deployment
 
-✅ **Currently deployed on Vercel:** https://crowd-cube-server-eight.vercel.app
+✅ **Currently deployed on Vercel:** https://crowd-cube-server-gilt.vercel.app
 
 The application is configured for easy deployment on platforms like:
 - **Vercel** (Currently deployed)

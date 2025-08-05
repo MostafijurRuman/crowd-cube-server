@@ -4,7 +4,7 @@
   "description": "A powerful backend API for crowdfunding platform built with Node.js, Express.js, and MongoDB",
   "main": "index.js",
   "engines": {
-    "node": ">=18.0.0"
+    "node": "22.x"
   },
   "scripts": {
     "start": "node index.js",
