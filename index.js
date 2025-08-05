@@ -113,7 +113,7 @@ run().catch(console.dir);
 
 // 5. Basic route
 app.get('/', (req, res) => {
-  res.send('DanSodka Coming soon');
+  res.send('Welcome to CrowdCube Server! API is running successfully.');
 });
 
 // 6. Listen to port
