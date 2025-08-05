@@ -59,10 +59,15 @@ The server will start running on `http://localhost:5000`
 ## 📚 API Documentation
 
 ### Base URL
+**Local Development:**
 ```
 http://localhost:5000
 ```
-*Live server URL will be added here*
+
+**Live Server:**
+```
+https://crowd-cube-server-eight.vercel.app
+```
 
 ### 🏆 Campaign Endpoints
 
@@ -183,11 +188,18 @@ crowd-cube-server/
 
 ## 🚀 Deployment
 
+✅ **Currently deployed on Vercel:** https://crowd-cube-server-eight.vercel.app
+
 The application is configured for easy deployment on platforms like:
+- **Vercel** (Currently deployed)
 - Heroku
-- Vercel
 - Railway
 - DigitalOcean
+
+### Vercel Deployment
+This project includes Vercel configuration files:
+- `vercel.json` - Deployment configuration
+- Environment variables configured in Vercel dashboard
 
 Make sure to set environment variables in your deployment platform.
 

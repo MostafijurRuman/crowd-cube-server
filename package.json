@@ -1,14 +1,18 @@
 {
   "name": "crowd-cube-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "A powerful backend API for crowdfunding platform built with Node.js, Express.js, and MongoDB",
   "main": "index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "start": "node index.js",
+    "dev": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["crowdfunding", "api", "mongodb", "express", "nodejs"],
+  "author": "Mostafijur Ruman",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
