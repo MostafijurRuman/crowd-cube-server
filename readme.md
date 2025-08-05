@@ -66,7 +66,7 @@ http://localhost:5000
 
 **Live Server:**
 ```
-https://crowd-cube-server-gilt.vercel.app
+https://crowd-cube-server-zeta.vercel.app
 ```
 
 ### 🏆 Campaign Endpoints
@@ -188,7 +188,7 @@ crowd-cube-server/
 
 ## 🚀 Deployment
 
-✅ **Currently deployed on Vercel:** https://crowd-cube-server-gilt.vercel.app
+✅ **Currently deployed on Vercel:** https://crowd-cube-server-zeta.vercel.app
 
 The application is configured for easy deployment on platforms like:
 - **Vercel** (Currently deployed)
